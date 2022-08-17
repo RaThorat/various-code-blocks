@@ -15,3 +15,5 @@ Sql pandas connection
 Web scrapping
 
 Use of google key to get lattitudes and longitudes
+
+Example of seaborn image
