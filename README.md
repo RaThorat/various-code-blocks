@@ -19,6 +19,15 @@ Download and load a pre-trained NER model: nlp = spacy.load("your_ner_model")
 
   Open the displayed URL in your browser to view the NER visualization.
 
+## Dependency plot
+This code generates a dependency plot of a given document using the displacy library.
+
+To use this code, you must first import the displacy library and create a document object. Then, you can use the render() function to generate the dependency plot, passing in the document object and specifying the desired style as "dep".
+
+The resulting plot is saved to a file at the specified output path, in this case "/home/gebruiker/Documenten/dependency_plot.svg". The file is opened in write mode and encoded in utf-8 to ensure proper formatting and character representation.
+
+This dependency plot can be useful for analyzing the grammatical structure of a document and understanding the relationships between words and phrases.
+
 # Combine textfiles
 
 
