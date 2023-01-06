@@ -11,7 +11,7 @@ Install the spacy library: pip install spacy
 
 Download and load a pre-trained NER model: nlp = spacy.load("your_ner_model")
 
-##Usage
+## Usage
 
   Set the text to be processed by the NER model in the doc1 variable.
 
