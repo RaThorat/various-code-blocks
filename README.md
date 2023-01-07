@@ -83,6 +83,11 @@ The code can be run as is, but it requires a dataframe called df_305 to be defin
 Once df_305 has been defined, running the code will produce a bar chart showing the interaction of technical science with other disciplines in different domains. The x-axis represents the combination of disciplines, the y-axis represents the value of the submission, and the bars are grouped by the attribute of the submission. The chart is split into rows by domain, and each row is labeled with the corresponding domain. The x-axis tick labels are rotated 45 degrees and aligned to the right for readability. The legend for the attribute is shown in the first row of the chart. The x- and y-axis labels are removed and the title of the chart is set to "Interaction of discipline Technical science with other sciences". The top of the chart is adjusted for aesthetic purposes.
 
 # Sql pandas connection
+This code is used to generate a SQL query and retrieve data from a database using pyodbc and pandas. The first part of the query is defined as query_code and the second part is defined as Sub_Naam. These two parts are then combined using string concatenation to create the full query, which is stored in the query variable.
+
+The necessary modules, pandas and pyodbc, are imported at the beginning of the code. Then, a connection to the SQL Server is established using the pyodbc.connect() function, providing the necessary connection details.
+
+The data is then retrieved using the pd.read_sql_query() function, which executes the query on the specified connection and stores the results in a Pandas dataframe. The columns of this dataframe are then printed.
 
 # Web scrapping
 
