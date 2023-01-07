@@ -50,7 +50,16 @@ To use this code, you will need to have the pandas library installed and the fil
 
 # Combining jupyter notebooks
 
-# Data anonimisation
+# Anonymisation with Hashlib
+This code uses the pandas module to import and work with data stored in an Excel file. It also uses the hashlib module to anonymise a specific column in the data.
+
+To use this code, replace "yourdata.xlsx" with the file path for your Excel file and "columns_name" with the name of the column you want to anonymise.
+
+The code first imports the pandas module and uses it to import the data from the Excel file. It then displays the first two rows of the dataframe to allow for crosschecking.
+
+Next, the code converts the data in the specified column to strings and then uses the hashlib module to apply a sha256 hash to each value in the column. The resulting hash is then displayed in the dataframe.
+
+This code can be useful for protecting sensitive information in your data while still allowing for analysis.
 
 # Sql pandas connection
 
