@@ -28,7 +28,20 @@ The resulting plot is saved to a file at the specified output path, in this case
 
 This dependency plot can be useful for analyzing the grammatical structure of a document and understanding the relationships between words and phrases.
 
-# Combine textfiles
+# Combine Multiple Text Files Into One Text File Using Python
+This code contains three methods for combining multiple text files into a single text file using Python.
+
+Method 1
+
+This method uses the glob and os modules to search for all .txt files in a specified directory. It then combines these files into a new file called all_combined.txt.
+
+Method 2
+
+This method uses the glob module to search for all .txt files in a specified directory, and the pd.concat() function from the pandas module to combine the contents of these files into a single pandas dataframe called df_RL1.
+
+Method 3
+
+This method uses the glob module to search for all .TXT files in the current directory. It then opens each file and adds its contents to a new file called allstates.txt. The first line of allstates.txt is a header row with the columns state, sex, year, name, and count.
 
 
 # Combining jupyter notebooks
