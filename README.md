@@ -61,12 +61,27 @@ Next, the code converts the data in the specified column to strings and then use
 
 This code can be useful for protecting sensitive information in your data while still allowing for analysis.
 
+# Example of seaborn image
+This code generates a bar chart showing the combination of disciplines submitted by applicants during a funding round. The interaction between technical science and other disciplines from various domains is shown as an example. This graph helps to answer the question of whether there are certain disciplines that perform particularly well in a particular subsidy round.
+
+## Dependencies
+This code requires the following packages:matplotlib, seaborn
+
+## How to Use
+The code can be run as is, but it requires a dataframe called df_305 to be defined. This dataframe should have the following columns:
+
+  Discipline: the discipline of the applicant
+  Disciplines: the combination of disciplines the applicant has submitted
+  Value: the value of the applicant's submission
+  Attribute: the attribute of the applicant's submission
+  Domain: the domain the applicant's submission belongs to
+  
+Once df_305 has been defined, running the code will produce a bar chart showing the interaction of technical science with other disciplines in different domains. The x-axis represents the combination of disciplines, the y-axis represents the value of the submission, and the bars are grouped by the attribute of the submission. The chart is split into rows by domain, and each row is labeled with the corresponding domain. The x-axis tick labels are rotated 45 degrees and aligned to the right for readability. The legend for the attribute is shown in the first row of the chart. The x- and y-axis labels are removed and the title of the chart is set to "Interaction of discipline Technical science with other sciences". The top of the chart is adjusted for aesthetic purposes.
+
 # Sql pandas connection
 
 # Web scrapping
 
 # Use of google key to get lattitudes and longitudes
-
-# Example of seaborn image
 
 # Combine Multiple Excel Worksheets Into a Single Pandas Dataframe 
