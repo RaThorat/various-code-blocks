@@ -48,8 +48,6 @@ This code is used to combine multiple excel worksheets into a single pandas data
 
 To use this code, you will need to have the pandas library installed and the file faillissement_database.xlsx in the same directory as your script. You may need to adjust the file path if the file is located elsewhere.
 
-# Combining jupyter notebooks
-
 # Anonymisation with Hashlib
 This code uses the pandas module to import and work with data stored in an Excel file. It also uses the hashlib module to anonymise a specific column in the data.
 
@@ -110,7 +108,3 @@ pandas library for working with tables
 
 ## Usage
 To use these methods, modify the values of the url and page variables to point to the desired webpages. You may also need to modify the blacklist variable to include any additional elements you wish to exclude from the output variable in method 1.
-
-# Use of google key to get lattitudes and longitudes
-
-# Combine Multiple Excel Worksheets Into a Single Pandas Dataframe 
