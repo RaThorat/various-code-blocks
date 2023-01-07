@@ -31,15 +31,15 @@ This dependency plot can be useful for analyzing the grammatical structure of a 
 # Combine Multiple Text Files Into One Text File Using Python
 This code contains three methods for combining multiple text files into a single text file using Python.
 
-Method 1
+## Method 1
 
 This method uses the glob and os modules to search for all .txt files in a specified directory. It then combines these files into a new file called all_combined.txt.
 
-Method 2
+## Method 2
 
 This method uses the glob module to search for all .txt files in a specified directory, and the pd.concat() function from the pandas module to combine the contents of these files into a single pandas dataframe called df_RL1.
 
-Method 3
+## Method 3
 
 This method uses the glob module to search for all .TXT files in the current directory. It then opens each file and adds its contents to a new file called allstates.txt. The first line of allstates.txt is a header row with the columns state, sex, year, name, and count.
 
@@ -89,7 +89,27 @@ The necessary modules, pandas and pyodbc, are imported at the beginning of the c
 
 The data is then retrieved using the pd.read_sql_query() function, which executes the query on the specified connection and stores the results in a Pandas dataframe. The columns of this dataframe are then printed.
 
-# Web scrapping
+# Extracting Information from a Website and Wikipedia Tables
+This script contains two methods for extracting information from the web.
+
+## Method 1: BeautifulSoup
+
+The first method uses the BeautifulSoup library to parse HTML and extract all text elements from a webpage specified by the url variable. It then filters out unwanted elements specified in the blacklist variable, and stores the remaining text in the output variable.
+
+## Method 2: read_html
+
+The second method uses the read_html function from the pandas.io.html library to extract tables from a Wikipedia page specified by the page variable. It stores the resulting list of tables in the wikitables variable and prints the number of tables extracted.
+
+## Dependencies
+
+requests library for sending HTTP requests
+
+bs4 (BeautifulSoup) library for parsing HTML
+
+pandas library for working with tables
+
+## Usage
+To use these methods, modify the values of the url and page variables to point to the desired webpages. You may also need to modify the blacklist variable to include any additional elements you wish to exclude from the output variable in method 1.
 
 # Use of google key to get lattitudes and longitudes
 
