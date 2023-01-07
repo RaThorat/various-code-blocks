@@ -43,6 +43,10 @@ Method 3
 
 This method uses the glob module to search for all .TXT files in the current directory. It then opens each file and adds its contents to a new file called allstates.txt. The first line of allstates.txt is a header row with the columns state, sex, year, name, and count.
 
+# Combine Multiple Excel Worksheets Into a Single Pandas Dataframe
+This code is used to combine multiple excel worksheets into a single pandas dataframe. It does this by using the pd.concat() function from the pandas library to read in the excel file faillissement_database.xlsx and combining all of the worksheets within the file into a single dataframe. The ignore_index parameter is set to True, which means that the index values of the original worksheets will be ignored and the final dataframe will be given a new index starting at 0.
+
+To use this code, you will need to have the pandas library installed and the file faillissement_database.xlsx in the same directory as your script. You may need to adjust the file path if the file is located elsewhere.
 
 # Combining jupyter notebooks
 
