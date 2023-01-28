@@ -94,6 +94,8 @@ This script contains two methods for extracting information from the web.
 
 The first method uses the BeautifulSoup library to parse HTML and extract all text elements from a webpage specified by the url variable. It then filters out unwanted elements specified in the blacklist variable, and stores the remaining text in the output variable.
 
+In other words: this code is using the Python requests library to fetch the HTML content of a webpage, specified by the url variable. It then uses the BeautifulSoup library to parse the HTML and extract all text elements. The output variable is used to store all the text elements that are not in the blacklist list. The blacklist is a list of HTML elements that the code is instructed to ignore. The final step is to print the output variable, which should contain all the text from the webpage that was not ignored. 
+
 ## Method 2: read_html
 
 The second method uses the read_html function from the pandas.io.html library to extract tables from a Wikipedia page specified by the page variable. It stores the resulting list of tables in the wikitables variable and prints the number of tables extracted.
